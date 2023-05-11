@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Container from 'react-bootstrap/Container'
+import { Routes, Route } from 'react-router-dom'
+import Navigation from './components/Navigation'
+import Footer from './components/Footer'
+import Mainpage from './pages/Mainpage'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import Blog from './pages/Blog'
 
-function App() {
+export default function App() {
+  const [darkMode, setDarkMode] = React.useState(false)
+
+  function toggleDarkMode() {
+    setDarkMode((prevMode) => !prevMode)
+  }
+
+  React.useEffect(() => {
+    const data = window.localStorage.getItem('darkMode')
+    if (data !== null) setDarkMode(JSON.parse(data))
+  }, [])
+
+  React.useEffect(() => {
+    window.localStorage.setItem('darkMode', JSON.stringify(darkMode))
+  }, [darkMode])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={darkMode ? 'dark' : 'light'}>
+      <Container className="app--container">
+        <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Routes>
+          <Route path="/" element={<Mainpage darkMode={darkMode} />} />
+          <Route path="/about" element={<About darkMode={darkMode} />} />
+          <Route path="/blog" element={<Blog darkMode={darkMode} />} />
+          <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+          <Route path="/projects" element={<Projects darkMode={darkMode} />} />
+        </Routes>
+        <Footer darkMode={darkMode} />
+      </Container>
     </div>
-  );
+  )
 }
-
-export default App;
