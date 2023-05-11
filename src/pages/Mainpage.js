@@ -9,7 +9,7 @@ export default function Mainpage(props) {
   let darkMode = props.darkMode
 
   const cards = projectsList.slice(0, 6).map((item) => {
-    return <Mainpage key={item.id} item={item} darkMode={darkMode} />
+    return <Card key={item.id} item={item} darkMode={darkMode} />
   })
   return (
     <main className="mt-5 footer--spacer">
