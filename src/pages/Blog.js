@@ -1,5 +1,4 @@
-export default function Blog(props){
-    let darkMode = props.darkMode
+export default function Blog({darkMode}){
 
     return(
         <main className="mt-5 d-flex justify-content-center">

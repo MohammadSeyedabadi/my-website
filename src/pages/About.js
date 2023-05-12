@@ -5,20 +5,16 @@ import Image from 'react-bootstrap/Image'
 import Picture from '../images/Picture.jpg'
 import { Link } from 'react-router-dom'
 
-export default function About(props) {
-  let darkMode = props.darkMode
-
+export default function About({ darkMode }) {
   return (
     <main className="mt-5 footer--spacer">
       <article>
         <Row>
           <Col>
             <h1
-              className={
-                darkMode
-                  ? 'text-center text-lg-start fw-bold mb-5 heading-dark'
-                  : 'text-center text-lg-start fw-bold mb-5 heading'
-              }
+              className={`text-center text-lg-start fw-bold mb-5 ${
+                darkMode ? 'heading-dark' : 'heading'
+              }`}
             >
               About me
             </h1>
@@ -35,11 +31,9 @@ export default function About(props) {
           </Col>
           <Col lg={9} className="mb-3">
             <h1
-              className={
-                darkMode
-                  ? 'fw-semibold fs-2 heading-dark'
-                  : 'fw-semibold fs-2 heading'
-              }
+              className={`fw-semibold fs-2 ${
+                darkMode ? 'heading-dark' : 'heading'
+              }`}
             >
               I'm Mohammad. I'm a product manager and data scientist.
             </h1>
@@ -48,11 +42,9 @@ export default function About(props) {
         <Row>
           <Col lg={7}>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
@@ -64,11 +56,9 @@ export default function About(props) {
         <Row>
           <Col lg={7}>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
@@ -80,11 +70,9 @@ export default function About(props) {
         <Row>
           <Col lg={7}>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
@@ -96,9 +84,7 @@ export default function About(props) {
         <h2 id="work-experience" className="mt-4">
           <a
             href="#work-experience"
-            className={
-              darkMode ? 'link--title link--title-dark' : 'link--title'
-            }
+            className={`link--title ${darkMode ? 'link--title-dark' : ''}`}
           >
             Work Experience
           </a>
@@ -106,11 +92,9 @@ export default function About(props) {
         <Row>
           <Col lg={7}>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
@@ -122,28 +106,26 @@ export default function About(props) {
         <Row>
           <Col lg={7}>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               I won't bore you too much with my work history; that's what my CV,
               Github and LinkedIn are for. you could also check out the{' '}
               <Link
                 to="/Projects"
-                className={
-                  darkMode ? 'article--p-a article--p-a-dark' : 'article--p-a'
-                }
+                className={`article--p-a ${
+                  darkMode ? 'article--p-a-dark' : ''
+                }`}
               >
                 projects
               </Link>{' '}
               page to see a highlight of my open-source work, and the{' '}
               <Link
                 to="/Blog"
-                className={
-                  darkMode ? 'article--p-a article--p-a-dark' : 'article--p-a'
-                }
+                className={`article--p-a ${
+                  darkMode ? 'article--p-a-dark' : ''
+                }`}
               >
                 blog
               </Link>{' '}
@@ -156,11 +138,9 @@ export default function About(props) {
             <li className="mb-3">
               <Link
                 to="#"
-                className={
-                  darkMode
-                    ? 'work--link work--link-dark fw-semibold'
-                    : 'work--link fw-semibold'
-                }
+                className={`work--link fw-semibold ${
+                  darkMode ? 'work--link-dark' : ''
+                }`}
               >
                 Download CV
               </Link>
@@ -168,11 +148,9 @@ export default function About(props) {
             <li className="mb-3">
               <Link
                 to="#"
-                className={
-                  darkMode
-                    ? 'work--link work--link-dark fw-semibold'
-                    : 'work--link fw-semibold'
-                }
+                className={`work--link fw-semibold ${
+                  darkMode ? 'work--link-dark' : ''
+                }`}
               >
                 Github
               </Link>
@@ -180,11 +158,9 @@ export default function About(props) {
             <li className="mb-3">
               <Link
                 to="#"
-                className={
-                  darkMode
-                    ? 'work--link work--link-dark fw-semibold'
-                    : 'work--link fw-semibold'
-                }
+                className={`work--link fw-semibold ${
+                  darkMode ? 'work--link-dark' : ''
+                }`}
               >
                 LinkedIn
               </Link>
@@ -194,9 +170,7 @@ export default function About(props) {
         <h2 id="hobbies-and-interests" className="mt-4">
           <a
             href="#hobbies-and-interests"
-            className={
-              darkMode ? 'link--title link--title-dark' : 'link--title'
-            }
+            className={`link--title ${darkMode ? 'link--title-dark' : ''}`}
           >
             Hobbies and Interests
           </a>
@@ -204,11 +178,9 @@ export default function About(props) {
         <Row>
           <Col lg={7}>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               Outside of work, I enjoy learning new things and writing on my
               blog, where I publish software development tutorials and the
@@ -223,11 +195,9 @@ export default function About(props) {
         <Row>
           <Col lg={7}>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               When I'm not writing, you'll find me praising till I'm hollow. I'm
               a die-hard Soulsborne fan—I love the challenging gameplay,
@@ -241,11 +211,9 @@ export default function About(props) {
               left such a lasting impression on me that I've written about them.
             </p>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               I also enjoy listening to music—mainly rock, folk, indie, and
               certain genres of metal. But I like to keep an open mind in case I
@@ -255,11 +223,9 @@ export default function About(props) {
               weren't pressed for space.
             </p>
             <p
-              className={
-                darkMode
-                  ? 'fs-5 hero-description-dark'
-                  : 'fs-5 hero-description'
-              }
+              className={`fs-5 ${
+                darkMode ? 'hero-description-dark' : 'hero-description'
+              }`}
             >
               At one point, I was obsessed with drawing (and pretty good at it,
               too!). But with time, I found myself preoccupied with so many

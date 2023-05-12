@@ -3,8 +3,7 @@ import React from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 
-export default function Navigation(props) {
-  let darkMode = props.darkMode
+export default function Navigation({darkMode, toggleDarkMode}) {
 
   return (
     <header
@@ -13,7 +12,7 @@ export default function Navigation(props) {
     >
       <nav className="nav nav--container d-flex align-items-center">
         <div className="">
-          <Link to="/" className="fw-semibold">
+          <Link to="/my-website" className="fw-semibold">
             {/* <span className="me-2">
               <Image
                 src="../images/logo.png"
@@ -38,7 +37,7 @@ export default function Navigation(props) {
         >
           <ul className="nav--list">
           <CustomLink
-              to="/"
+              to="/my-website"
               className={`fw-semibold nav--link home ${
                 darkMode ? 'nav--link-dark' : ''
               }`}
@@ -87,7 +86,7 @@ export default function Navigation(props) {
                 className={`fs-4 cursor--style ${
                   darkMode ? 'bi bi-moon-stars-fill' : 'bi bi-sun'
                 }`}
-                onClick={props.toggleDarkMode}
+                onClick={toggleDarkMode}
               ></i>
             </li>
           </ul>

@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import projectsList from '../data/projectsList'
 
-export default function Mainpage(props) {
-  let darkMode = props.darkMode
+export default function Mainpage({darkMode}) {
 
   const cards = projectsList.slice(0, 6).map((item) => {
     return <Card key={item.id} item={item} darkMode={darkMode} />

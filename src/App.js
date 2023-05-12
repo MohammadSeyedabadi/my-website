@@ -30,7 +30,7 @@ export default function App() {
       <Container className="app--container">
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
-          <Route path="/" element={<Mainpage darkMode={darkMode} />} />
+          <Route path="/my-website" element={<Mainpage darkMode={darkMode} />} />
           <Route path="/about" element={<About darkMode={darkMode} />} />
           <Route path="/blog" element={<Blog darkMode={darkMode} />} />
           <Route path="/contact" element={<Contact darkMode={darkMode} />} />

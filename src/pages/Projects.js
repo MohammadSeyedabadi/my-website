@@ -2,8 +2,7 @@ import React from 'react'
 import Card from '../components/Card'
 import projectsList from '../data/projectsList'
 
-export default function Projects(props) {
-  let darkMode = props.darkMode
+export default function Projects({darkMode}) {
 
   const cards = projectsList.map((item) => {
     return <Card key={item.id} item={item} darkMode={darkMode} />
