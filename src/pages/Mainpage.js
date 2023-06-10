@@ -11,7 +11,7 @@ export default function Mainpage({darkMode}) {
     return <Card key={item.id} item={item} darkMode={darkMode} />
   })
   return (
-    <main className="mt-5 footer--spacer">
+    <main className="mt-5">
       <article>
         <Row>
           <Col sm={7}>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 export default function About({ darkMode }) {
   return (
-    <main className="mt-5 footer--spacer">
+    <main className="mt-5">
       <article>
         <Row>
           <Col>

@@ -27,7 +27,7 @@ export default function Contact({darkMode}) {
   }
 
   return (
-    <main className="mt-5 footer--spacer">
+    <main className="mt-5">
       <Row>
         <Col md={5}>
           <h1 className={`fw-bold ${darkMode ? 'heading-dark' : 'heading'}`}>

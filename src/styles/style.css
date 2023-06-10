@@ -334,10 +334,6 @@ img {
   color: var(--font-color-heading);
 }
 
-.footer--spacer {
-  margin-bottom: 10rem;
-}
-
 .see-more--btn {
   align-items: center;
   background-color: var(--gray-05);
@@ -462,6 +458,7 @@ img {
 .footer {
   margin-top: auto;
   margin-bottom: 2.3rem;
+  padding-top: 10rem;
 }
 
 @media screen and (max-width: 767px) {
