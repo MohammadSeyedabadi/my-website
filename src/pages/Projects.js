@@ -1,4 +1,6 @@
 import React from 'react'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Card from '../components/Card'
 import projectsList from '../data/projectsList'
 
@@ -9,16 +11,16 @@ export default function Projects({ darkMode }) {
   return (
     <>
       <main className="mt-5">
-        <div className="row mb-5">
-          <div className="col-12">
+        <Row className="mb-5">
+          <Col>
             <h1 className={`fw-bold ${darkMode ? 'heading-dark' : 'heading'}`}>
               Projects
             </h1>
-          </div>
-        </div>
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-2 gy-md-3 gx-2 gx-md-3">
+          </Col>
+        </Row>
+        <Row xs={1} md={2} lg={3} className="gy-2 gy-md-3 gx-2 gx-md-3">
           {cards}
-        </div>
+        </Row>
       </main>
     </>
   )
