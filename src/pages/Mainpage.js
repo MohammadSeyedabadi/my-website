@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import projectsList from '../data/projectsList'
 
-export default function Mainpage({darkMode}) {
+export default function Mainpage() {
 
   const cards = projectsList.slice(0, 6).map((item) => {
-    return <Card key={item.id} item={item} darkMode={darkMode} />
+    return <Card key={item.id} id={item.id} item={item} />
   })
   return (
     <main className="mt-5">
@@ -19,9 +19,7 @@ export default function Mainpage({darkMode}) {
               Hey, I'm Mohammad!
             </h1>
             <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
+              className="hero-description fs-5"
             >
               Welcome to my digital garden. 🌱
               <br />

@@ -321,11 +321,11 @@ img {
   border-bottom: 2px solid var(--rainbow-5);
 }
 
-.hero-description {
+.light .hero-description {
   color: var(--gray-7);
 }
 
-.hero-description-dark {
+.dark .hero-description{
   color: var(--gray-2);
 }
 
@@ -373,24 +373,7 @@ img {
   color: var(--gray-2);
 }
 
-/* .btn--1-dark {
-  border-color: var(--gray-7);
-  background-color: var(--gray-8);
-  color: var(--gray-2);
-}
-
-.btn--1-dark:hover {
-  border-color: var(--gray-6);
-  background-color: var(--gray-8);
-  color: var(--gray-2);
-} */
-
-/* card button is just like see more button but with different padding */
-.card--btn-dark-light {
-  padding: 0.3rem 0.6rem;
-}
-
-.card--btn-dark-light:hover {
+.project--wrapper .btn--1{
   padding: 0.3rem 0.6rem;
 }
 
@@ -402,7 +385,7 @@ img {
   border-radius: var(--border-radius);
 }
 
-.project--wrapper-dark {
+.dark .project--wrapper{
   background-color: var(--gray-9);
   border: 1px solid var(--gray-7);
 }
@@ -412,16 +395,15 @@ img {
   color: var(--gray-5);
 }
 
-.project--time-dark {
-  font-family: var(--font-family-monospace);
+.dark .project--time{
   color: var(--pink);
 }
 
-.star--icon {
+.light .star--icon {
   color: var(--yellow);
 }
 
-.star--icon-dark {
+.dark .star--icon{
   color: var(--rainbow-5);
 }
 
@@ -435,11 +417,11 @@ img {
   border-bottom: 2px solid var(--gray-8);
 }
 
-.star--count-dark {
+.dark .star--count{
   color: var(--gray-5);
 }
 
-.star--count-dark:hover {
+.dark .star--count:hover{
   color: var(--gray-0);
   border-bottom: 2px solid var(--gray-0);
 }
@@ -453,19 +435,19 @@ img {
   text-decoration: underline;
 }
 
-.link--title-dark {
+.dark .link--title{
   color: var(--font-color-heading);
 }
 
-.link--title-dark:hover {
+.dark .link--title:hover{
   color: var(--font-color-heading);
 }
 
-.project--p {
+.light .project--p {
   color: var(--gray-6);
 }
 
-.project--p-dark {
+.dark .project--p{
   color: var(--gray-5);
 }
 
