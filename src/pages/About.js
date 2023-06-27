@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom'
 export default function About({ darkMode }) {
   return (
     <main className="mt-5">
-      <article className="hero-description">
+      <article className="hero-description fs-5 fw-light">
         <Row>
           <Col>
-            <h1 className="heading text-center text-lg-start fw-bold mb-5">
+            <h1 className="heading text-center text-lg-start fw-light display-3 mb-5">
               About me
             </h1>
           </Col>
@@ -26,14 +26,14 @@ export default function About({ darkMode }) {
             />
           </Col>
           <Col lg={9} className="mb-3">
-            <h1 className="heading fw-semibold fs-2">
+            <h1 className="fw-light display-6">
               I'm Mohammad. I'm a product manager and data scientist.
             </h1>
           </Col>
         </Row>
         <Row>
           <Col lg={7}>
-            <p className="fs-5">
+            <p>
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
               Europe, Asia, and a bunch of biblically old mountains. You can
@@ -43,7 +43,7 @@ export default function About({ darkMode }) {
         </Row>
         <Row>
           <Col lg={7}>
-            <p className="fs-5">
+            <p>
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
               Europe, Asia, and a bunch of biblically old mountains. You can
@@ -53,7 +53,7 @@ export default function About({ darkMode }) {
         </Row>
         <Row>
           <Col lg={7}>
-            <p className="fs-5">
+            <p>
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
               Europe, Asia, and a bunch of biblically old mountains. You can
@@ -68,7 +68,7 @@ export default function About({ darkMode }) {
         </h2>
         <Row>
           <Col lg={7}>
-            <p className="fs-5">
+            <p>
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
               Europe, Asia, and a bunch of biblically old mountains. You can
@@ -78,7 +78,7 @@ export default function About({ darkMode }) {
         </Row>
         <Row>
           <Col lg={7}>
-            <p className="fs-5">
+            <p>
               I won't bore you too much with my work history; that's what my CV,
               Github and LinkedIn are for. you could also check out the{' '}
               <Link to="/Projects" className="article--p-a">
@@ -95,17 +95,17 @@ export default function About({ darkMode }) {
         <Row>
           <ul>
             <li className="mb-3">
-              <Link to="#" className="work--link fw-semibold">
+              <Link to="#" className="work--link fs-5 fw-light">
                 Download CV
               </Link>
             </li>
             <li className="mb-3">
-              <Link to="#" className="work--link fw-semibold">
+              <Link to="#" className="work--link fw-light">
                 Github
               </Link>
             </li>
             <li className="mb-3">
-              <Link to="#" className="work--link fw-semibold">
+              <Link to="#" className="work--link fw-light">
                 LinkedIn
               </Link>
             </li>
@@ -118,7 +118,7 @@ export default function About({ darkMode }) {
         </h2>
         <Row>
           <Col lg={7}>
-            <p className="fs-5">
+            <p>
               Outside of work, I enjoy learning new things and writing on my
               blog, where I publish software development tutorials and the
               occasional essay. My passion for writing motivated me to create
@@ -131,7 +131,7 @@ export default function About({ darkMode }) {
         </Row>
         <Row>
           <Col lg={7}>
-            <p className="fs-5">
+            <p>
               When I'm not writing, you'll find me praising till I'm hollow. I'm
               a die-hard Soulsborne fan—I love the challenging gameplay,
               intricate lore, jolly co-operation, and community inside jokes
@@ -143,7 +143,7 @@ export default function About({ darkMode }) {
               shaped my interests and personality to this day. Some games have
               left such a lasting impression on me that I've written about them.
             </p>
-            <p className="fs-5">
+            <p>
               I also enjoy listening to music—mainly rock, folk, indie, and
               certain genres of metal. But I like to keep an open mind in case I
               stumble upon something new that I happen to like. Some of my
@@ -151,7 +151,7 @@ export default function About({ darkMode }) {
               GY!BE, and lots of other great bands that I'd list here if I
               weren't pressed for space.
             </p>
-            <p className="fs-5">
+            <p>
               At one point, I was obsessed with drawing (and pretty good at it,
               too!). But with time, I found myself preoccupied with so many
               other things that I simply couldn't find the time to draw. Lately,
