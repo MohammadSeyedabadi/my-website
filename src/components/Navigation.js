@@ -21,7 +21,7 @@ export default function Navigation({darkMode, toggleDarkMode}) {
               />
             </span> */}
             <span
-              className="letter-spacing site--name"
+              className="letter-spacing site--name fw-medium"
             >
               Mohammad Seyedabadi
             </span>
