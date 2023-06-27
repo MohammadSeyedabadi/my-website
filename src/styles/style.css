@@ -161,26 +161,24 @@ img {
 .nav--container {
   display: flex;
   justify-content: space-between;
+  height: var(--navigation-height);
   margin-left: 0.7rem;
   margin-right: 0.7rem;
 }
 
-.site--name {
+.light .site--name {
   color: var(--gray-7);
 }
 
-.site--name-dark {
+.dark .site--name{
   color: var(--gray-0);
 }
 
-.nav {
-  height: var(--navigation-height);
-}
-
 /* used !important because this class is also aplied next to nav--menu class */
-.nav-dark {
-  background-color: var(--gray-8) !important;
-  color: var(--gray-1) !important;
+
+.dark .navigation{
+  background-color: var(--gray-8);
+  color: var(--gray-1);
 }
 
 .nav--img {
@@ -203,6 +201,11 @@ img {
     border-radius: 1.25rem 1.25rem 0 0;
     /* transition: 0.4s; */
   }
+
+  .dark .nav--menu{
+    background-color: var(--gray-8);
+    color: var(--gray-1);
+  }
 }
 
 .nav--list,
@@ -219,7 +222,7 @@ img {
   padding-bottom: 3px;
 }
 
-.nav--link-dark {
+.dark .nav--link{
   color: var(--gray-4);
 }
 
@@ -243,7 +246,7 @@ img {
     margin: 0;
   } */
 
-  .nav {
+  .nav--container {
     height: calc(var(--navigation-height) + 1.5rem); /* 4.5rem */
   }
 }
