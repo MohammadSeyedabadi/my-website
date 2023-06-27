@@ -34,13 +34,13 @@ export default function Mainpage() {
           <Col sm={12}>
             <h2 className="d-flex justify-content-between align-items-center">
               <div
-                className="heading fw-bold"
+                className="heading fw-light"
               >
                 Projects
               </div>
               <Link
                 to="/Projects"
-                className="btn--1 fs-6"
+                className="btn--1 fw-light fs-6"
               >
                 View all
               </Link>

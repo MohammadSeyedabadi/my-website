@@ -30,19 +30,17 @@ export default function Contact({darkMode}) {
     <main className="mt-5">
       <Row>
         <Col md={5}>
-          <h1 className={`fw-bold ${darkMode ? 'heading-dark' : 'heading'}`}>
+          <h1 className="heading fw-light display-3">
             Contacts
           </h1>
           <h2
-            className={`fw-bold mt-5 ${darkMode ? 'heading-dark' : 'heading'}`}
+            className="heading fw-light mt-5" 
           >
             Let's Talk
           </h2>
 
           <p
-            className={`fs-5 ${
-              darkMode ? 'hero-description-dark' : 'hero-description'
-            }`}
+            className="hero-description fs-5 fw-light"
           >
             Do you have some big ideas and need help bringing them to fruition
             for your business? Then please reach out, we would love to hear more

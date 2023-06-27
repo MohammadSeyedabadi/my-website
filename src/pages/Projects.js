@@ -13,7 +13,7 @@ export default function Projects({ darkMode }) {
       <main className="mt-5">
         <Row className="mb-5">
           <Col>
-            <h1 className={`fw-bold ${darkMode ? 'heading-dark' : 'heading'}`}>
+            <h1 className="heading fw-light display-3">
               Projects
             </h1>
           </Col>
