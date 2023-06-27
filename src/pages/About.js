@@ -25,7 +25,7 @@ export default function About({ darkMode }) {
               className="picture"
             />
           </Col>
-          <Col lg={9} className="mb-3">
+          <Col lg={5} className="mb-3">
             <h1 className="fw-light display-6">
               I'm Mohammad. I'm a product manager and data scientist.
             </h1>
