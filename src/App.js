@@ -10,20 +10,20 @@ import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 
 export default function App() {
-  const [darkMode, setDarkMode] = React.useState(false)
+  const [darkMode, setDarkMode] = React.useState(true)
 
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode)
   }
 
-  React.useEffect(() => {
-    const data = window.localStorage.getItem('darkMode')
-    if (data !== null) setDarkMode(JSON.parse(data))
-  }, [])
+   React.useEffect(() => {
+     const data = window.localStorage.getItem('darkMode')
+     if (data !== null) setDarkMode(JSON.parse(data))
+   }, [])
 
-  React.useEffect(() => {
-    window.localStorage.setItem('darkMode', JSON.stringify(darkMode))
-  }, [darkMode])
+   React.useEffect(() => {
+     window.localStorage.setItem('darkMode', JSON.stringify(darkMode))
+   }, [darkMode])
 
   return (
     <div className={darkMode ? "dark" : "light"}>
