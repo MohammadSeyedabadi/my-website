@@ -15,11 +15,11 @@ export default function Mainpage() {
       <article>
         <Row>
           <Col sm={7}>
-            <h1 className="heading fw-bold">
+            <h1 className="heading fw-light display-3">
               Hey, I'm Mohammad!
             </h1>
             <p
-              className="hero-description fs-5"
+              className="hero-description fs-5 fw-light"
             >
               Welcome to my digital garden. 🌱
               <br />
