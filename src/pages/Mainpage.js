@@ -15,7 +15,7 @@ export default function Mainpage({darkMode}) {
       <article>
         <Row>
           <Col sm={7}>
-            <h1 className={`fw-bold ${darkMode ? 'heading-dark' : 'heading'}`}>
+            <h1 className="heading fw-bold">
               Hey, I'm Mohammad!
             </h1>
             <p
@@ -36,15 +36,13 @@ export default function Mainpage({darkMode}) {
           <Col sm={12}>
             <h2 className="d-flex justify-content-between align-items-center">
               <div
-                className={`fw-bold ${darkMode ? 'heading-dark' : 'heading'}`}
+                className="heading fw-bold"
               >
                 Projects
               </div>
               <Link
                 to="/Projects"
-                className={`fs-6 see-more--btn ${
-                  darkMode ? 'see-more--btn-dark' : ''
-                }`}
+                className="btn--1 fs-6"
               >
                 View all
               </Link>
