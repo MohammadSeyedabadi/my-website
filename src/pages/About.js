@@ -8,14 +8,10 @@ import { Link } from 'react-router-dom'
 export default function About({ darkMode }) {
   return (
     <main className="mt-5">
-      <article>
+      <article className="hero-description">
         <Row>
           <Col>
-            <h1
-              className={`text-center text-lg-start fw-bold mb-5 ${
-                darkMode ? 'heading-dark' : 'heading'
-              }`}
-            >
+            <h1 className="heading text-center text-lg-start fw-bold mb-5">
               About me
             </h1>
           </Col>
@@ -30,22 +26,14 @@ export default function About({ darkMode }) {
             />
           </Col>
           <Col lg={9} className="mb-3">
-            <h1
-              className={`fw-semibold fs-2 ${
-                darkMode ? 'heading-dark' : 'heading'
-              }`}
-            >
+            <h1 className="heading fw-semibold fs-2">
               I'm Mohammad. I'm a product manager and data scientist.
             </h1>
           </Col>
         </Row>
         <Row>
           <Col lg={7}>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
               Europe, Asia, and a bunch of biblically old mountains. You can
@@ -55,11 +43,7 @@ export default function About({ darkMode }) {
         </Row>
         <Row>
           <Col lg={7}>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
               Europe, Asia, and a bunch of biblically old mountains. You can
@@ -69,11 +53,7 @@ export default function About({ darkMode }) {
         </Row>
         <Row>
           <Col lg={7}>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
               Europe, Asia, and a bunch of biblically old mountains. You can
@@ -82,20 +62,13 @@ export default function About({ darkMode }) {
           </Col>
         </Row>
         <h2 id="work-experience" className="mt-4">
-          <a
-            href="#work-experience"
-            className={`link--title ${darkMode ? 'link--title-dark' : ''}`}
-          >
+          <a href="#work-experience" className="link--title">
             Work Experience
           </a>
         </h2>
         <Row>
           <Col lg={7}>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
               Europe, Asia, and a bunch of biblically old mountains. You can
@@ -105,28 +78,14 @@ export default function About({ darkMode }) {
         </Row>
         <Row>
           <Col lg={7}>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               I won't bore you too much with my work history; that's what my CV,
               Github and LinkedIn are for. you could also check out the{' '}
-              <Link
-                to="/Projects"
-                className={`article--p-a ${
-                  darkMode ? 'article--p-a-dark' : ''
-                }`}
-              >
+              <Link to="/Projects" className="article--p-a">
                 projects
               </Link>{' '}
               page to see a highlight of my open-source work, and the{' '}
-              <Link
-                to="/Blog"
-                className={`article--p-a ${
-                  darkMode ? 'article--p-a-dark' : ''
-                }`}
-              >
+              <Link to="/Blog" className="article--p-a">
                 blog
               </Link>{' '}
               for my tutorials and more.
@@ -136,52 +95,30 @@ export default function About({ darkMode }) {
         <Row>
           <ul>
             <li className="mb-3">
-              <Link
-                to="#"
-                className={`work--link fw-semibold ${
-                  darkMode ? 'work--link-dark' : ''
-                }`}
-              >
+              <Link to="#" className="work--link fw-semibold">
                 Download CV
               </Link>
             </li>
             <li className="mb-3">
-              <Link
-                to="#"
-                className={`work--link fw-semibold ${
-                  darkMode ? 'work--link-dark' : ''
-                }`}
-              >
+              <Link to="#" className="work--link fw-semibold">
                 Github
               </Link>
             </li>
             <li className="mb-3">
-              <Link
-                to="#"
-                className={`work--link fw-semibold ${
-                  darkMode ? 'work--link-dark' : ''
-                }`}
-              >
+              <Link to="#" className="work--link fw-semibold">
                 LinkedIn
               </Link>
             </li>
           </ul>
         </Row>
         <h2 id="hobbies-and-interests" className="mt-4">
-          <a
-            href="#hobbies-and-interests"
-            className={`link--title ${darkMode ? 'link--title-dark' : ''}`}
-          >
+          <a href="#hobbies-and-interests" className="link--title">
             Hobbies and Interests
           </a>
         </h2>
         <Row>
           <Col lg={7}>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               Outside of work, I enjoy learning new things and writing on my
               blog, where I publish software development tutorials and the
               occasional essay. My passion for writing motivated me to create
@@ -194,11 +131,7 @@ export default function About({ darkMode }) {
         </Row>
         <Row>
           <Col lg={7}>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               When I'm not writing, you'll find me praising till I'm hollow. I'm
               a die-hard Soulsborne fan—I love the challenging gameplay,
               intricate lore, jolly co-operation, and community inside jokes
@@ -210,11 +143,7 @@ export default function About({ darkMode }) {
               shaped my interests and personality to this day. Some games have
               left such a lasting impression on me that I've written about them.
             </p>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               I also enjoy listening to music—mainly rock, folk, indie, and
               certain genres of metal. But I like to keep an open mind in case I
               stumble upon something new that I happen to like. Some of my
@@ -222,11 +151,7 @@ export default function About({ darkMode }) {
               GY!BE, and lots of other great bands that I'd list here if I
               weren't pressed for space.
             </p>
-            <p
-              className={`fs-5 ${
-                darkMode ? 'hero-description-dark' : 'hero-description'
-              }`}
-            >
+            <p className="fs-5">
               At one point, I was obsessed with drawing (and pretty good at it,
               too!). But with time, I found myself preoccupied with so many
               other things that I simply couldn't find the time to draw. Lately,
