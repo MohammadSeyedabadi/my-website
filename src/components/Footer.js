@@ -2,7 +2,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import { Link } from 'react-router-dom'
 
-export default function Footer({darkMode}) {
+export default function Footer() {
 
   return (
     <footer className="footer">

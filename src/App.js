@@ -32,14 +32,14 @@ export default function App() {
         <Routes>
           <Route
             path="/my-website"
-            element={<Mainpage darkMode={darkMode} />}
+            element={<Mainpage />}
           />
-          <Route path="/about" element={<About darkMode={darkMode} />} />
-          <Route path="/blog" element={<Blog darkMode={darkMode} />} />
-          <Route path="/contact" element={<Contact darkMode={darkMode} />} />
-          <Route path="/projects" element={<Projects darkMode={darkMode} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
-        <Footer darkMode={darkMode} />
+        <Footer />
       </Container>
     </div>
   )

@@ -4,9 +4,9 @@ import Col from 'react-bootstrap/Col'
 import Card from '../components/Card'
 import projectsList from '../data/projectsList'
 
-export default function Projects({ darkMode }) {
+export default function Projects() {
   const cards = projectsList.map((item) => {
-    return <Card key={item.id} item={item} darkMode={darkMode} />
+    return <Card key={item.id} item={item} />
   })
   return (
     <>

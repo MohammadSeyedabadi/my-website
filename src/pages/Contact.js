@@ -2,7 +2,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-export default function Contact({darkMode}) {
+export default function Contact() {
 
   const [status, setStatus] = React.useState('Submit')
   const handleSubmit = async (e) => {
