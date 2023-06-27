@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image'
 import Picture from '../images/Picture.jpg'
 import { Link } from 'react-router-dom'
 
-export default function About({ darkMode }) {
+export default function About() {
   return (
     <main className="mt-5">
       <article className="hero-description fs-5 fw-light">
