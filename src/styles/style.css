@@ -453,9 +453,14 @@ img {
 
 /* footer */
 .footer {
+  color: var(--gray-7);
   margin-top: auto;
   margin-bottom: 2.3rem;
   padding-top: 10rem;
+}
+
+.dark .footer{
+  color: var(--gray-2);
 }
 
 @media screen and (max-width: 767px) {
@@ -474,14 +479,6 @@ img {
     padding-right: initial;
     padding-left: initial;
   }
-}
-
-.footer--color {
-  color: var(--gray-7);
-}
-
-.footer--color-dark {
-  color: var(--gray-2);
 }
 
 /* About page */

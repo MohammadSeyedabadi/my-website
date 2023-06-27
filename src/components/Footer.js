@@ -9,16 +9,12 @@ export default function Footer({darkMode}) {
       <section>
         <Row className="text-center mb-3">
           <h2
-            className={`fw-semibold fs-6 ${
-              darkMode ? 'footer--color-dark' : 'footer--color'
-            }`}
+            className="fw-semibold fs-6"
           >
             Thanks for reading!
           </h2>
           <p
-            className={`fw-semibold ${
-              darkMode ? 'footer--color-dark' : 'footer--color'
-            }`}
+            className="fw-semibold"
           >
             © Mohammad Seyedabadi, 2023-Present
           </p>
@@ -27,41 +23,25 @@ export default function Footer({darkMode}) {
           <nav className="d-flex justify-content-evenly footer--nav">
             <Link
               to="#"
-              className={`fw-semibold fs-6 link--title ${
-                darkMode
-                  ? 'link--title-dark footer--color-dark'
-                  : 'footer--color'
-              }`}
+              className="fw-semibold fs-6 link--title"
             >
               Twitter
             </Link>
             <Link
               to="#"
-              className={`fw-semibold fs-6 link--title ${
-                darkMode
-                  ? 'link--title-dark footer--color-dark'
-                  : 'footer--color'
-              }`}
+              className="fw-semibold fs-6 link--title"
             >
               GitHub
             </Link>
             <Link
               to="#"
-              className={`fw-semibold fs-6 link--title ${
-                darkMode
-                  ? 'link--title-dark footer--color-dark'
-                  : 'footer--color'
-              }`}
+              className="fw-semibold fs-6 link--title"
             >
               LinkedIn
             </Link>
             <Link
               to="#"
-              className={`fw-semibold fs-6 link--title ${
-                darkMode
-                  ? 'link--title-dark footer--color-dark'
-                  : 'footer--color'
-              }`}
+              className="fw-semibold fs-6 link--title"
             >
               Dribbble
             </Link>
