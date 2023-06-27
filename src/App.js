@@ -26,11 +26,14 @@ export default function App() {
   }, [darkMode])
 
   return (
-    <div className={darkMode ? 'dark' : 'light'}>
-      <Container className="app--container">
+    <div className={`App ${darkMode ? 'dark' : 'light'}`}>
+      <Container>
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
-          <Route path="/my-website" element={<Mainpage darkMode={darkMode} />} />
+          <Route
+            path="/my-website"
+            element={<Mainpage darkMode={darkMode} />}
+          />
           <Route path="/about" element={<About darkMode={darkMode} />} />
           <Route path="/blog" element={<Blog darkMode={darkMode} />} />
           <Route path="/contact" element={<Contact darkMode={darkMode} />} />
