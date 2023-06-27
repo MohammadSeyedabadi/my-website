@@ -49,75 +49,57 @@ export default function Contact({darkMode}) {
         </Col>
         <Col md={7} className="d-flex justify-content-center">
           <div
-            className={`mt-5 mt-md-0 p-4 p-md-5 ${
-              darkMode ? 'box-dark' : 'box'
-            }`}
+            className="box mt-5 mt-md-0 p-4 p-md-5"
           >
             <form
-              className={`p-4 p-md-3 ${
-                darkMode ? 'form--contact-dark' : 'form--contact'
-              }`}
+              className="form--contact p-4 p-md-3"
               onSubmit={handleSubmit}
             >
               <div>
                 <label
                   htmlFor="name"
-                  className={`fw-semibold ${
-                    darkMode ? 'form--label-dark' : 'form--label'
-                  }`}
+                  className="form--label fs-5 fw-light"
                 >
                   Name:
                 </label>
                 <input
                   type="text"
                   id="name"
-                  className={`fw-semibold p-1 mb-3 ${
-                    darkMode ? 'form--input-dark' : 'form--input'
-                  }`}
+                  className="form--input fs-5 fw-light p-1 mb-3"
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="email"
-                  className={`fw-semibold ${
-                    darkMode ? 'form--label-dark' : 'form--label'
-                  }`}
+                  className="form--label fs-5 fw-light"
                 >
                   Email:
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className={`fw-semibold p-1 mb-3 ${
-                    darkMode ? 'form--input-dark' : 'form--input'
-                  }`}
+                  className="form--input fs-5 fw-light p-1 mb-3"
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="message"
-                  className={`fw-semibold ${
-                    darkMode ? 'form--label-dark' : 'form--label'
-                  }`}
+                  className="form--label fs-5 fw-light"
                 >
                   Message:
                 </label>
                 <textarea
                   id="message"
                   rows={4}
-                  className={`fw-semibold p-1 mb-3 ${
-                    darkMode ? 'form--input-dark' : 'form--input'
-                  }`}
+                  className="form--input fs-5 fw-light p-1 mb-3"
                   required
                 />
               </div>
               <button
                 type="submit"
-                className={`fw-semibold ${
-                  darkMode ? 'form--button form--button-dark' : 'form--button'
-                }`}
+                className="form--button fs-5 fw-light"
               >
                 {status}
               </button>

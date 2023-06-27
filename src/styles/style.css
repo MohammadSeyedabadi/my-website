@@ -561,17 +561,8 @@ form input, form textarea, form button{
   border-radius: var(--border-radius);
   overflow: hidden;
 }
-
-.box-dark{
-  position: relative;
-  /* width: 300px;
-  height: 400px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.dark .box{
   background-color: var(--gray-6);
-  border-radius: var(--border-radius);
-  overflow: hidden;
 }
 
 .form--label{
@@ -580,11 +571,10 @@ form input, form textarea, form button{
   z-index: 2;
 }
 
-.form--label-dark{
-  position: relative;
+.dark .form--label{
   color: var(--font-color-heading);
-  z-index: 2;
 }
+
 
 .box::before{
   content: '';
@@ -604,7 +594,7 @@ form input, form textarea, form button{
 
 }
 
-.box-dark::before{
+.dark .box::before{
   content: '';
   position: absolute;
   width: 1700px;
@@ -613,7 +603,7 @@ form input, form textarea, form button{
   animation: rotate 6s linear infinite;
 }
 
-.box-dark:after{
+.dark .box:after{
   content: '';
   position: absolute;
   background-color: var(--gray-8);
@@ -641,14 +631,10 @@ form input, form textarea, form button{
   z-index: 2;
 }
 
-.form--input-dark{
-  outline: none;
+.dark .form--input{
   background-color: var(--gray-7);
   color: var(--font-color-heading);
-  border: 0;
   border-bottom: 2px solid #0079b9;
-  position: relative;
-  z-index: 2;
 }
 
 .form--button{
@@ -675,16 +661,13 @@ form input, form textarea, form button{
   position: relative;
   z-index: 2;
 }
-
-.form--button-dark {
+.dark .form--button{
   border: 2px solid var(--gray-6);
   background-color: var(--gray-8);
   color: var(--gray-2);
-  position: relative;
-  z-index: 2;
 }
 
-.form--button-dark:hover {
+.dark .form--button:hover {
   border: 2px solid var(--gray-7);
   background-color: var(--gray-8);
   color: var(--gray-2);
