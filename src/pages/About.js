@@ -25,14 +25,14 @@ export default function About({ darkMode }) {
               className="picture"
             />
           </Col>
-          <Col lg={5} className="mb-3">
+          <Col lg={6} className="mb-3">
             <h1 className="fw-light display-6">
               I'm Mohammad. I'm a product manager and data scientist.
             </h1>
           </Col>
         </Row>
         <Row>
-          <Col lg={7}>
+          <Col lg={8}>
             <p>
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
@@ -42,7 +42,7 @@ export default function About({ darkMode }) {
           </Col>
         </Row>
         <Row>
-          <Col lg={7}>
+          <Col lg={8}>
             <p>
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
@@ -52,7 +52,7 @@ export default function About({ darkMode }) {
           </Col>
         </Row>
         <Row>
-          <Col lg={7}>
+          <Col lg={8}>
             <p>
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
@@ -67,7 +67,7 @@ export default function About({ darkMode }) {
           </a>
         </h2>
         <Row>
-          <Col lg={7}>
+          <Col lg={8}>
             <p>
               Speaking of last names, if mine hasn't already betrayed me, I was
               originally born in Armenia, a beautiful country nestled between
@@ -77,7 +77,7 @@ export default function About({ darkMode }) {
           </Col>
         </Row>
         <Row>
-          <Col lg={7}>
+          <Col lg={8}>
             <p>
               I won't bore you too much with my work history; that's what my CV,
               Github and LinkedIn are for. you could also check out the{' '}
@@ -117,7 +117,7 @@ export default function About({ darkMode }) {
           </a>
         </h2>
         <Row>
-          <Col lg={7}>
+          <Col lg={8}>
             <p>
               Outside of work, I enjoy learning new things and writing on my
               blog, where I publish software development tutorials and the
@@ -130,7 +130,7 @@ export default function About({ darkMode }) {
           </Col>
         </Row>
         <Row>
-          <Col lg={7}>
+          <Col lg={8}>
             <p>
               When I'm not writing, you'll find me praising till I'm hollow. I'm
               a die-hard Soulsborne fan—I love the challenging gameplay,
